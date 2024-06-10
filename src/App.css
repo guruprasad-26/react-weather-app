@@ -1,0 +1,45 @@
+body {
+  font-family: sans-serif;
+}
+
+.app {
+  background-image: url("./images/sunny-new-bg.jpg");
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.4s ease-out;
+  padding-top: 2px;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app.hot {
+  background-image: url("./images/sunny-new-bg.jpg");
+}
+
+.app.cold {
+  background-image: url("./images/snow-new-bg.png");
+}
+
+.app.rain {
+  background-image: url("./images/rainy-new-bg.jpg");
+}
+
+.app.cloud {
+  background-image: url("./images/cloudy-new-bg.jpg");
+}
+
+main {
+  min-height: 100vh;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.445),
+    rgba(0, 0, 0, 0.829)
+  );
+  padding: 25px;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
